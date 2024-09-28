@@ -13,37 +13,37 @@ After many days of unsuccessful and desperate search for a solution based on the
 
 ---
 
-# Key parts
+## Key parts
 
-## index.html
+1. index.html
 ```
-<link id="theme-link" rel="stylesheet" href="indigo-pink.css" />
-```
-
-```<body class="mat-app-background">
-<app-root></app-root>
-</body>```
-
-## prebuild themes copied to folder public
-
-## main component
-loading saved theme:
-```
-  constructor() {
-    const saved_theme = localStorage.getItem('selected-theme');
-    if( saved_theme ){
-      this.setTheme(saved_theme);
-    }
-    
-  }
+    <link id="theme-link" rel="stylesheet" href="indigo-pink.css" />
 ```
 
-change theme:
+```
+    <body class="mat-app-background">
+    <app-root></app-root>
+    </body>
+```
 
+2. Prebuild themes copied to folder public
+
+3. main component
+```
+        constructor() {
+            const saved_theme = localStorage.getItem('selected-theme');
+            if( saved_theme ){
+             this.setTheme(saved_theme);
+            }
+            
+        }
+```
+
+4. main component
 ``` 
-    setTheme(theme: string) {
-    const themeLink = this.renderer.selectRootElement('#theme-link', true);
-    this.renderer.setAttribute(themeLink, 'href', theme);
-    localStorage.setItem('selected-theme', theme);
-  }
+        setTheme(theme: string) {
+            const themeLink = this.renderer.selectRootElement('#theme-link', true);
+            this.renderer.setAttribute(themeLink, 'href', theme);
+            localStorage.setItem('selected-theme', theme);
+        }
 ```
