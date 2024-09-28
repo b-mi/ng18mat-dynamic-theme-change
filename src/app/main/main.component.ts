@@ -128,7 +128,6 @@ export class MainComponent {
 
 
   setTheme(theme: string) {
-    console.log('theme', theme);
     const themeLink = this.renderer.selectRootElement('#theme-link', true);
     this.renderer.setAttribute(themeLink, 'href', theme);
     localStorage.setItem('selected-theme', theme);
