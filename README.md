@@ -27,6 +27,14 @@ After many days of unsuccessful and desperate search for a solution based on the
 ```
 
 2. Prebuild themes copied to folder public
+    - rose-red.css
+    - purple-green.css
+    - pink-bluegrey.css
+    - magenta-violet.css
+    - indigo-pink.css
+    - deeppurple-amber.css
+    - cyan-orange.css
+    - azure-blue.css
 
 3. main component
 ```
