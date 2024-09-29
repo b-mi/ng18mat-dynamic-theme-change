@@ -14,6 +14,7 @@ import { TblComponent } from '../tbl/tbl.component';
 import { TreeComponent } from '../tree/tree.component';
 import { MainComponent } from '../main/main.component';
 import { TypoComponent } from '../typo/typo.component';
+import { ButtsComponent } from '../butts/butts.component';
 
 @Component({
   selector: 'app-navi',
@@ -32,7 +33,8 @@ import { TypoComponent } from '../typo/typo.component';
     TblComponent,
     TreeComponent,
     MainComponent,
-    TypoComponent
+    TypoComponent,
+    ButtsComponent
   ]
 })
 export class NaviComponent {
